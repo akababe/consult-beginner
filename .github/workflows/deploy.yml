@@ -2,53 +2,36 @@ name: Build & Deploy
 
 on:
   push:
-    branches:
-      - main
+    branches: [main]
 
 permissions:
   contents: read
   pages: write
   id-token: write
 
-concurrency:
-  group: pages
-  cancel-in-progress: true
-
-env:
-  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
-
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4.2.2
+      - uses: actions/checkout@v4
 
-      - name: Setup Node
-        uses: actions/setup-node@v4.0.4
+      - uses: actions/setup-node@v4
         with:
           node-version: 22
-          cache: npm
-          cache-dependency-path: |
-            package-lock.json
-            client/package-lock.json
 
-      - name: Install root dependencies
+      - name: Install dependencies
+        working-directory: client
         run: npm ci
 
-      - name: Install client dependencies
-        run: cd client && npm ci
-
-      - name: Build client
-        run: cd client && npm run build
+      - name: Build
+        working-directory: client
+        run: npm run build
 
       - name: SPA fallback
         run: cp client/dist/index.html client/dist/404.html
 
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v4
-
+      - uses: actions/upload-pages-artifact@v4
         with:
           path: client/dist
 
@@ -61,6 +44,5 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
-      - name: Deploy
-        id: deployment
+      - id: deployment
         uses: actions/deploy-pages@v5
