@@ -1,5 +1,6 @@
 import { useNavigate } from 'react-router-dom'
 import { cases } from '../../cases/index.js'
+import { prelims } from '../../prelims/index.js'
 
 export default function Header({ theme, toggleTheme }) {
   const navigate = useNavigate()
@@ -13,7 +14,7 @@ export default function Header({ theme, toggleTheme }) {
         </div>
 
         <div className="header-actions">
-          <span className="case-count-badge">{cases.length} {cases.length === 1 ? 'Case' : 'Cases'}</span>
+          <span className="case-count-badge">{prelims.length} Foundation · {cases.length} {cases.length === 1 ? 'Case' : 'Cases'}</span>
           <button
             className="theme-toggle"
             onClick={toggleTheme}

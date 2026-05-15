@@ -4,6 +4,7 @@ import Header from './components/layout/Header.jsx'
 import Footer from './components/layout/Footer.jsx'
 import Home from './pages/Home.jsx'
 import CasePage from './pages/CasePage.jsx'
+import PrelimPage from './pages/PrelimPage.jsx'
 import NotFound from './pages/NotFound.jsx'
 
 export default function App() {
@@ -24,9 +25,10 @@ export default function App() {
       <Header theme={theme} toggleTheme={toggleTheme} />
       <main style={{ flex: 1 }}>
         <Routes>
-          <Route path="/"            element={<Home />} />
-          <Route path="/case/:slug"  element={<CasePage />} />
-          <Route path="*"            element={<NotFound />} />
+          <Route path="/"                    element={<Home />} />
+          <Route path="/foundation/:slug"  element={<PrelimPage />} />
+          <Route path="/case/:slug"        element={<CasePage />} />
+          <Route path="*"                  element={<NotFound />} />
         </Routes>
       </main>
       <Footer />

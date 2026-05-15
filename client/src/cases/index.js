@@ -4,6 +4,10 @@
 import Case01 from './Case01_CafeProfit.jsx'
 import Case02 from './Case02_LaundryExpansion.jsx'
 import Case03 from './Case03_FashionInventory.jsx'
+import Case04 from './Case04_PhotographyUnitEcon.jsx'
+import Case05 from './Case05_BakeryWorkingCapital.jsx'
+import Case06 from './Case06_TutoringCAC_LTV.jsx'
+import Case07 from './Case07_PrintROI.jsx'
 
 export const cases = [
   {
@@ -53,6 +57,70 @@ export const cases = [
     readTime: '18 min read',
     accentColor: '#7A2AC4',
     component: Case03,
+  },
+  {
+    id: 'case-04',
+    slug: 'photography-unit-economics',
+    number: '04',
+    title: 'Why Am I Always Busy But Never Saving Anything?',
+    subtitle: 'A freelance photographer discovers his full calendar hides a real hourly rate of IDR 178,000 — half what he assumed.',
+    industry: 'Creative Services',
+    firm: 'Small Business',
+    framework: 'Unit Economics',
+    decisionType: 'Pricing & Time Allocation',
+    difficulty: 'Beginner',
+    region: 'Bandung, Indonesia',
+    readTime: '18 min read',
+    accentColor: '#8B5A2A',
+    component: Case04,
+  },
+  {
+    id: 'case-05',
+    slug: 'bakery-working-capital',
+    number: '05',
+    title: 'My Biggest Order Almost Killed My Business',
+    subtitle: 'A home bakery accepts the largest order of her career and runs out of cash within 20 days — despite being profitable.',
+    industry: 'Food Production',
+    firm: 'Small Business (UMKM)',
+    framework: 'Working Capital Analysis',
+    decisionType: 'Cash Flow Management',
+    difficulty: 'Beginner',
+    region: 'Surabaya, Indonesia',
+    readTime: '17 min read',
+    accentColor: '#C47A2A',
+    component: Case05,
+  },
+  {
+    id: 'case-06',
+    slug: 'tutoring-cac-ltv',
+    number: '06',
+    title: "I'm Spending More Getting Students Than I Earn From Them",
+    subtitle: 'An online tutoring founder discovers her ad channel produces low-LTV students while her best channel — referrals — is completely unfunded.',
+    industry: 'Education',
+    firm: 'Small Business',
+    framework: 'CAC & LTV Analysis',
+    decisionType: 'Customer Economics',
+    difficulty: 'Beginner',
+    region: 'Jakarta, Indonesia',
+    readTime: '18 min read',
+    accentColor: '#5A2A8B',
+    component: Case06,
+  },
+  {
+    id: 'case-07',
+    slug: 'print-shop-roi',
+    number: '07',
+    title: 'Should I Buy the Machine or Keep Renting It?',
+    subtitle: "A print shop owner evaluates a IDR 72M large-format printer — and learns why the salesperson's numbers were 41% overstated.",
+    industry: 'Trade Services',
+    firm: 'Small Business',
+    framework: 'ROI + Payback Period',
+    decisionType: 'Capital Expenditure',
+    difficulty: 'Beginner',
+    region: 'Semarang, Indonesia',
+    readTime: '18 min read',
+    accentColor: '#2A5C3F',
+    component: Case07,
   },
 ]
 

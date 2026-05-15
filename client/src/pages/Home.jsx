@@ -1,6 +1,8 @@
 import { useState, useMemo } from 'react'
 import { cases } from '../cases/index.js'
+import { prelims } from '../prelims/index.js'
 import CaseCard from '../components/case/CaseCard.jsx'
+import PrelimCard from '../components/case/PrelimCard.jsx'
 
 const INDUSTRY_FILTERS = [
   'All Industries',
@@ -65,6 +67,34 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* ── FOUNDATION SECTION ── */}
+      <div className="page-container">
+        <div className="section-header">
+          <div className="section-header__eyebrow">Start Here</div>
+          <h2 className="section-header__title">Foundation Modules</h2>
+          <p className="section-header__desc">
+            Build your vocabulary before diving into the cases. Each module teaches one
+            core concept with worked numbers and real business examples.
+          </p>
+        </div>
+        <div className="cases-grid">
+          {prelims.map(p => (
+            <PrelimCard key={p.id} prelimData={p} />
+          ))}
+        </div>
+      </div>
+
+      {/* ── CASES SECTION HEADER ── */}
+      <div className="page-container" style={{ paddingTop: '48px' }}>
+        <div className="section-header">
+          <div className="section-header__eyebrow">Apply the Concepts</div>
+          <h2 className="section-header__title">Case Studies</h2>
+          <p className="section-header__desc">
+            Real small business problems — solved step by step with the frameworks you've just learned.
+          </p>
+        </div>
+      </div>
 
       {/* ── FILTERS ── */}
       <div className="page-container">
