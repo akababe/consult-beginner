@@ -9,7 +9,12 @@ import PreA4 from './PreA4_WorkingCapital.jsx'
 import PreB2 from './PreB2_UnitEconomics.jsx'
 import PreB3 from './PreB3_CAC_LTV.jsx'
 import PreB4 from './PreB4_BreakEven.jsx'
+import PreA5 from './PreA5_BalanceSheet.jsx'
 import PreB5 from './PreB5_ROI.jsx'
+import PreC1 from './PreC1_TimeValueOfMoney.jsx'
+import PreC2 from './PreC2_NPV_DCF.jsx'
+import PreC3 from './PreC3_IRR_MOIC.jsx'
+import PreC4 from './PreC4_ScenarioAnalysis.jsx'
 
 export const prelims = [
   {
@@ -111,6 +116,20 @@ export const prelims = [
     unlocksCase: ['Case 06'],
   },
   {
+    id: 'pre-a5',
+    slug: 'balance-sheet',
+    moduleId: 'A5',
+    module: 'Module A · The Language of Money',
+    title: 'The Balance Sheet',
+    subtitle: 'What your business owns, what it owes, and the difference — your actual net worth, not what you feel it is.',
+    concept: 'Assets, Liabilities & Owner\'s Equity',
+    difficulty: 'Foundation',
+    readTime: '13 min read',
+    accentColor: '#2A4A8B',
+    component: PreA5,
+    unlocksCase: ['Case 08'],
+  },
+  {
     id: 'pre-b5',
     slug: 'roi-payback',
     moduleId: 'B5',
@@ -123,6 +142,62 @@ export const prelims = [
     accentColor: '#2A5C3F',
     component: PreB5,
     unlocksCase: ['Case 07'],
+  },
+  {
+    id: 'pre-c1',
+    slug: 'time-value-of-money',
+    moduleId: 'C1',
+    module: 'Module C · Value Over Time',
+    title: 'Time Value of Money',
+    subtitle: "Why a rupiah today is worth more than a rupiah tomorrow — and how to compare cash flows that arrive at different points in time.",
+    concept: 'Time Value & Discounting',
+    difficulty: 'Foundation',
+    readTime: '12 min read',
+    accentColor: '#8B2A4A',
+    component: PreC1,
+    unlocksCase: ['Case 09'],
+  },
+  {
+    id: 'pre-c2',
+    slug: 'npv-dcf',
+    moduleId: 'C2',
+    module: 'Module C · Value Over Time',
+    title: 'NPV & Discounted Cash Flow',
+    subtitle: 'How to translate a stream of future cash flows into a single present-day verdict — and use it to say yes or no to an investment.',
+    concept: 'Net Present Value',
+    difficulty: 'Foundation',
+    readTime: '13 min read',
+    accentColor: '#4A8B2A',
+    component: PreC2,
+    unlocksCase: ['Case 09'],
+  },
+  {
+    id: 'pre-c3',
+    slug: 'irr-moic',
+    moduleId: 'C3',
+    module: 'Module C · Value Over Time',
+    title: 'IRR & MOIC',
+    subtitle: 'Two ways to measure investment return — the annualised rate and the raw cash multiple — and why the same MOIC can hide very different IRRs.',
+    concept: 'Return Metrics',
+    difficulty: 'Foundation',
+    readTime: '12 min read',
+    accentColor: '#8B8B2A',
+    component: PreC3,
+    unlocksCase: ['Case 09'],
+  },
+  {
+    id: 'pre-c4',
+    slug: 'scenario-analysis',
+    moduleId: 'C4',
+    module: 'Module C · Value Over Time',
+    title: 'Scenarios & Probability Weighting',
+    subtitle: 'How to build optimistic, base, and pessimistic futures — and combine them into a single expected value that accounts for uncertainty honestly.',
+    concept: 'Scenario Analysis',
+    difficulty: 'Foundation',
+    readTime: '13 min read',
+    accentColor: '#4A2A8B',
+    component: PreC4,
+    unlocksCase: ['Case 09'],
   },
 ]
 

@@ -8,6 +8,8 @@ import Case04 from './Case04_PhotographyUnitEcon.jsx'
 import Case05 from './Case05_BakeryWorkingCapital.jsx'
 import Case06 from './Case06_TutoringCAC_LTV.jsx'
 import Case07 from './Case07_PrintROI.jsx'
+import Case08 from './Case08_SparePartsBalanceSheet.jsx'
+import Case09 from './Case09_FrozenFoodInvestment.jsx'
 
 export const cases = [
   {
@@ -121,6 +123,38 @@ export const cases = [
     readTime: '18 min read',
     accentColor: '#2A5C3F',
     component: Case07,
+  },
+  {
+    id: 'case-08',
+    slug: 'spare-parts-balance-sheet',
+    number: '08',
+    title: "I've Been Profitable for 8 Years. Why Won't the Bank Lend Me Money?",
+    subtitle: 'A spare parts shop owner applies for a business loan and discovers his real net worth is IDR 23M — not the IDR 111M he believed.',
+    industry: 'Retail / Auto Parts',
+    firm: 'Small Business',
+    framework: 'Balance Sheet Analysis',
+    decisionType: 'Financing & Net Worth',
+    difficulty: 'Beginner',
+    region: 'Semarang, Indonesia',
+    readTime: '20 min read',
+    accentColor: '#2A4A8B',
+    component: Case08,
+  },
+  {
+    id: 'case-09',
+    slug: 'frozen-food-investment',
+    number: '09',
+    title: 'Is the Platform Deal Worth It? A Frozen Food Producer Runs the Numbers',
+    subtitle: 'Pak Hendro discovers that IDR 72M in Year 5 is worth only IDR 35.8M today — and how to value a platform contract across three possible futures.',
+    industry: 'Food Production',
+    firm: 'Small Business',
+    framework: 'NPV + DCF + IRR + Scenario Analysis',
+    decisionType: 'Capital Investment',
+    difficulty: 'Beginner',
+    region: 'Malang, Indonesia',
+    readTime: '22 min read',
+    accentColor: '#2A8B7A',
+    component: Case09,
   },
 ]
 
