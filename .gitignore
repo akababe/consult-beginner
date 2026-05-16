@@ -1,5 +1,6 @@
 /client/case/plan-project.md
 /node_modules
-/client
-/node_modules
 .claude
+/client/.claude
+/client/node_modules
+skills-lock.json
