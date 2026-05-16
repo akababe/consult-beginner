@@ -15,6 +15,11 @@ import PreC1 from './PreC1_TimeValueOfMoney.jsx'
 import PreC2 from './PreC2_NPV_DCF.jsx'
 import PreC3 from './PreC3_IRR_MOIC.jsx'
 import PreC4 from './PreC4_ScenarioAnalysis.jsx'
+import PreD1 from './PreD1_BusinessModelArchetypes.jsx'
+import PreD2 from './PreD2_OperatingLeverage.jsx'
+import PreD3 from './PreD3_PlatformNetworkEffects.jsx'
+import PreD4 from './PreD4_CompetitiveMoats.jsx'
+import PreD5 from './PreD5_CapitalAllocation.jsx'
 
 export const prelims = [
   {
@@ -198,6 +203,76 @@ export const prelims = [
     accentColor: '#4A2A8B',
     component: PreC4,
     unlocksCase: ['Case 09'],
+  },
+  {
+    id: 'pre-d1',
+    slug: 'business-model-archetypes',
+    moduleId: 'D1',
+    module: 'Module D · Business Model Intuition',
+    title: 'Business Model Archetypes',
+    subtitle: 'How the structure of your revenue relationship — product, service, subscription, or platform — determines everything about your margins, growth, and risk.',
+    concept: 'Business Model Design',
+    difficulty: 'Foundation',
+    readTime: '13 min read',
+    accentColor: '#3A5A7A',
+    component: PreD1,
+    unlocksCase: ['Case 10', 'Case 12'],
+  },
+  {
+    id: 'pre-d2',
+    slug: 'operating-leverage',
+    moduleId: 'D2',
+    module: 'Module D · Business Model Intuition',
+    title: 'Operating Leverage',
+    subtitle: 'Why a 20% volume drop can wipe out 80% of your profit — and how the ratio of fixed to variable costs determines how sensitive your business is to demand swings.',
+    concept: 'Operating Leverage & Cost Structure',
+    difficulty: 'Foundation',
+    readTime: '13 min read',
+    accentColor: '#7A3A5A',
+    component: PreD2,
+    unlocksCase: ['Case 10'],
+  },
+  {
+    id: 'pre-d3',
+    slug: 'platform-network-effects',
+    moduleId: 'D3',
+    module: 'Module D · Business Model Intuition',
+    title: 'Platform & Network Effects',
+    subtitle: 'Why some businesses become more valuable the larger they get — and the chicken-and-egg problem every marketplace must solve to get there.',
+    concept: 'Platform Economics & Network Effects',
+    difficulty: 'Foundation',
+    readTime: '14 min read',
+    accentColor: '#5A7A3A',
+    component: PreD3,
+    unlocksCase: ['Case 11'],
+  },
+  {
+    id: 'pre-d4',
+    slug: 'competitive-moats',
+    moduleId: 'D4',
+    module: 'Module D · Business Model Intuition',
+    title: 'Competitive Moats',
+    subtitle: "What makes a business genuinely hard to copy — the four structural advantages that protect margin over time, and how to know which one you actually have.",
+    concept: 'Competitive Advantage',
+    difficulty: 'Foundation',
+    readTime: '14 min read',
+    accentColor: '#5A3A7A',
+    component: PreD4,
+    unlocksCase: ['Case 11', 'Case 12'],
+  },
+  {
+    id: 'pre-d5',
+    slug: 'capital-allocation',
+    moduleId: 'D5',
+    module: 'Module D · Business Model Intuition',
+    title: 'Capital Allocation',
+    subtitle: 'The most important decision a profitable business makes is where to reinvest its earnings — and ROIC is the metric that makes those decisions comparable.',
+    concept: 'Capital Allocation & ROIC',
+    difficulty: 'Foundation',
+    readTime: '13 min read',
+    accentColor: '#3A7A5A',
+    component: PreD5,
+    unlocksCase: ['Case 12'],
   },
 ]
 

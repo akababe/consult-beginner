@@ -10,6 +10,9 @@ import Case06 from './Case06_TutoringCAC_LTV.jsx'
 import Case07 from './Case07_PrintROI.jsx'
 import Case08 from './Case08_SparePartsBalanceSheet.jsx'
 import Case09 from './Case09_FrozenFoodInvestment.jsx'
+import Case10 from './Case10_LaundryOperatingLeverage.jsx'
+import Case11 from './Case11_WarungPlatformDefense.jsx'
+import Case12 from './Case12_BatikCapitalAllocation.jsx'
 
 export const cases = [
   {
@@ -155,6 +158,54 @@ export const cases = [
     readTime: '22 min read',
     accentColor: '#2A8B7A',
     component: Case09,
+  },
+  {
+    id: 'case-10',
+    slug: 'laundry-operating-leverage',
+    number: '10',
+    title: 'More Machines, More Risk — Or More Profit?',
+    subtitle: "Pak Bimo's laundry profits swing IDR 16M between peak and slow season — and buying IDR 88M in new machines would turn a profitable business into an annual loss if demand doesn't grow.",
+    industry: 'Laundry & Personal Services',
+    firm: 'Small Business',
+    framework: 'Operating Leverage Analysis',
+    decisionType: 'Capital Expenditure / Capacity Investment',
+    difficulty: 'Beginner',
+    region: 'Bandung, Indonesia',
+    readTime: '20 min read',
+    accentColor: '#6A2A5A',
+    component: Case10,
+  },
+  {
+    id: 'case-11',
+    slug: 'warung-platform-defense',
+    number: '11',
+    title: 'When the VC Money Comes to Town',
+    subtitle: "Nadia's home-cook food platform has 65 curated cooks and real network effects — but a Series A startup is launching in her territory with IDR 400M in marketing. What can't money buy?",
+    industry: 'Food Platform / Digital Marketplace',
+    firm: 'Small Business',
+    framework: 'Network Value Assessment + Competitive Moat Mapping',
+    decisionType: 'Competitive Strategy',
+    difficulty: 'Beginner',
+    region: 'Surabaya, Indonesia',
+    readTime: '21 min read',
+    accentColor: '#2A6A8B',
+    component: Case11,
+  },
+  {
+    id: 'case-12',
+    slug: 'batik-capital-allocation',
+    number: '12',
+    title: 'Three Doors for IDR 180 Million',
+    subtitle: "Ibu Marlina has accumulated IDR 180M and three investment options: a second toko (24.96% ROIC), an online brand (214.7% ROIC), or an artisan workshop she has dreamed of for a decade (7.74% ROIC).",
+    industry: 'Batik / Fashion Retail',
+    firm: 'Small Business',
+    framework: 'ROIC Comparison + Competitive Moat Assessment',
+    decisionType: 'Capital Allocation',
+    difficulty: 'Beginner',
+    region: 'Solo, Indonesia',
+    readTime: '22 min read',
+    accentColor: '#8B6A2A',
+    component: Case12,
   },
 ]
 
