@@ -1,3 +1,5 @@
+import BalanceSheetCalc from './calculators/BalanceSheetCalc.jsx'
+
 const PreA5 = () => {
   return (
     <div className="case-study">
@@ -395,6 +397,18 @@ Current Ratio (short-term solvency):
               of how good its income statement looks.
             </p>
           </div>
+        </div>
+      </section>
+
+
+      {/* ── SECTION 7 ── */}
+      <section>
+        <h2>7. Try It — Interactive Calculator</h2>
+        <div className="content">
+          <p>
+            Build a balance sheet from scratch with the sliders — assets must always equal liabilities plus equity.
+          </p>
+          <BalanceSheetCalc />
         </div>
       </section>
 

@@ -1,3 +1,5 @@
+import WorkingCapitalCalc from './calculators/WorkingCapitalCalc.jsx'
+
 const PreA4 = () => {
   return (
     <div className="case-study">
@@ -320,6 +322,18 @@ Cash Conversion Cycle for this order:
               quickly, build your cash reserve before growth, not after.
             </p>
           </div>
+        </div>
+      </section>
+
+
+      {/* ── SECTION 7 ── */}
+      <section>
+        <h2>7. Try It — Interactive Calculator</h2>
+        <div className="content">
+          <p>
+            Adjust DPO, DIO, and DSO to see the cash conversion cycle shift on the timeline, then use the working capital calculator below.
+          </p>
+          <WorkingCapitalCalc />
         </div>
       </section>
 

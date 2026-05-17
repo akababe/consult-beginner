@@ -1,3 +1,5 @@
+import TimeValueCalc from './calculators/TimeValueCalc.jsx'
+
 const PreC1 = () => {
   return (
     <div className="case-study">
@@ -364,6 +366,18 @@ Find r where PV(B) = IDR 15,000,000:
               consistently before making a decision, rather than after.
             </p>
           </div>
+        </div>
+      </section>
+
+
+      {/* ── SECTION 7 ── */}
+      <section>
+        <h2>7. Try It — Interactive Calculator</h2>
+        <div className="content">
+          <p>
+            Use the compound growth calculator to see how the gap between compound and simple interest widens over time, then run the discounting calculator in reverse.
+          </p>
+          <TimeValueCalc />
         </div>
       </section>
 

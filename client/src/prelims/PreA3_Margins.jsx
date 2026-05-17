@@ -1,3 +1,5 @@
+import MarginsCalc from './calculators/MarginsCalc.jsx'
+
 const PreA3 = () => {
   return (
     <div className="case-study">
@@ -309,6 +311,18 @@ Monthly volume and total contribution (assumed order counts):
               a more relevant measure than net profit.
             </p>
           </div>
+        </div>
+      </section>
+
+
+      {/* ── SECTION 7 ── */}
+      <section>
+        <h2>7. Try It — Interactive Calculator</h2>
+        <div className="content">
+          <p>
+            Drag the sliders to see how COGS, variable opex, and fixed costs stack up against price — and watch all four margin lines update simultaneously.
+          </p>
+          <MarginsCalc />
         </div>
       </section>
 

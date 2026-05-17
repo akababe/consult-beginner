@@ -1,3 +1,5 @@
+import CapitalAllocationCalc from './calculators/CapitalAllocationCalc.jsx'
+
 const PreD5 = () => {
   return (
     <div className="case-study">
@@ -254,6 +256,18 @@ Capital Allocation Analysis: IDR 200,000,000 Available
               Even when multiple options look attractive, deploying all capital simultaneously eliminates the ability to course-correct. If Option C is executed and succeeds, the business generates more cash that can fund Option A. If Option C fails or underperforms, the remaining IDR 150 million is still available. The option value of waiting — being able to respond to what you learn — is worth more than the minor opportunity cost of a few months' delay. This is especially true for expansion decisions: start the new branch with minimum viable investment, prove the model, then deploy the full renovation budget once the concept is validated.
             </p>
           </div>
+        </div>
+      </section>
+
+
+      {/* ── SECTION 7 ── */}
+      <section>
+        <h2>7. Try It — Interactive Calculator</h2>
+        <div className="content">
+          <p>
+            Adjust capital and projected profit for each option to see ROIC rankings update in real time — the highest ROIC option rises to the top.
+          </p>
+          <CapitalAllocationCalc />
         </div>
       </section>
 

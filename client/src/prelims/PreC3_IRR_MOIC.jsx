@@ -1,3 +1,5 @@
+import IRRMOICCalc from './calculators/IRRMOICCalc.jsx'
+
 const PreC3 = () => {
   return (
     <div className="case-study">
@@ -364,6 +366,18 @@ Fitri should buy the fabric batch, not the showcase.`}
               downside scenario occurs.
             </p>
           </div>
+        </div>
+      </section>
+
+
+      {/* ── SECTION 7 ── */}
+      <section>
+        <h2>7. Try It — Interactive Calculator</h2>
+        <div className="content">
+          <p>
+            Set entry price, exit price, and hold period to see how MOIC and IRR move together — and why the same MOIC can hide very different IRRs.
+          </p>
+          <IRRMOICCalc />
         </div>
       </section>
 

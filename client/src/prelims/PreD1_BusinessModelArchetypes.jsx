@@ -1,3 +1,5 @@
+import BusinessModelCalc from './calculators/BusinessModelCalc.jsx'
+
 const PreD1 = () => {
   return (
     <div className="case-study">
@@ -284,6 +286,18 @@ const PreD1 = () => {
               The archetype analysis is about the revenue relationship, not what is being sold. A laundry service can be transactional (pay per kg), subscription (monthly flat fee), or even platform (connecting laundry workers with households). A café can be transactional (per cup), membership (monthly unlimited coffee), or hybrid. The product is the same. The financial structure changes dramatically. Whenever you analyze a business, ask: how else could this same business capture revenue from the same customers? That question is often worth more than any optimization of the current model.
             </p>
           </div>
+        </div>
+      </section>
+
+
+      {/* ── SECTION 7 ── */}
+      <section>
+        <h2>7. Try It — Interactive Calculator</h2>
+        <div className="content">
+          <p>
+            Click each archetype card to compare key economics — gross margin, working capital, moat, and risk — side by side.
+          </p>
+          <BusinessModelCalc />
         </div>
       </section>
 

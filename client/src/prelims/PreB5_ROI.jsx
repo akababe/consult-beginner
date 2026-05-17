@@ -1,3 +1,5 @@
+import ROIPaybackCalc from './calculators/ROIPaybackCalc.jsx'
+
 const PreB5 = () => {
   return (
     <div className="case-study">
@@ -345,6 +347,18 @@ Breakeven volume to justify investment in 2 years: IDR 19,100,000/24 + IDR 497,0
               or the marginal ROI falls below your hurdle rate.
             </p>
           </div>
+        </div>
+      </section>
+
+
+      {/* ── SECTION 7 ── */}
+      <section>
+        <h2>7. Try It — Interactive Calculator</h2>
+        <div className="content">
+          <p>
+            Enter the investment size and annual profit to see whether the return clears the 8% bank hurdle — and by how much.
+          </p>
+          <ROIPaybackCalc />
         </div>
       </section>
 

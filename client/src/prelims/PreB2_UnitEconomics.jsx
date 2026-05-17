@@ -1,3 +1,5 @@
+import UnitEconomicsCalc from './calculators/UnitEconomicsCalc.jsx'
+
 const PreB2 = () => {
   return (
     <div className="case-study">
@@ -312,6 +314,18 @@ Monthly (10 pairs):
               hired staff and expanded capacity. The time to check is before you scale, not after.
             </p>
           </div>
+        </div>
+      </section>
+
+
+      {/* ── SECTION 7 ── */}
+      <section>
+        <h2>7. Try It — Interactive Calculator</h2>
+        <div className="content">
+          <p>
+            Stack all per-customer costs against the selling price and see exactly where margin is made — or lost.
+          </p>
+          <UnitEconomicsCalc />
         </div>
       </section>
 

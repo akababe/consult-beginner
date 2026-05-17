@@ -1,3 +1,5 @@
+import ScenarioCalc from './calculators/ScenarioCalc.jsx'
+
 const PreC4 = () => {
   return (
     <div className="case-study">
@@ -407,6 +409,18 @@ The required optimistic probability is 2.5× Bima's estimate.`}
               any single NPV calculation.
             </p>
           </div>
+        </div>
+      </section>
+
+
+      {/* ── SECTION 7 ── */}
+      <section>
+        <h2>7. Try It — Interactive Calculator</h2>
+        <div className="content">
+          <p>
+            Assign probabilities and NPV outcomes to bull, base, and bear cases to arrive at a single probability-weighted expected value.
+          </p>
+          <ScenarioCalc />
         </div>
       </section>
 

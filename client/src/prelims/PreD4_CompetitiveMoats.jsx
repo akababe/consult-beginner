@@ -1,3 +1,5 @@
+import CompetitiveMoatsCalc from './calculators/CompetitiveMoatsCalc.jsx'
+
 const PreD4 = () => {
   return (
     <div className="case-study">
@@ -266,6 +268,18 @@ Competitive Moat Assessment
               If a business analysis reveals that a business currently has no meaningful moat, that is a diagnosis, not a death sentence. Moats can be built deliberately. A service business can build switching cost by embedding its work into clients' systems. A product business can build a brand moat by narrowing its focus to a niche where it can become the known name. A local business can build a network effect by creating a community around its product. The question after the diagnosis is: given our cost structure, customer base, and resources, which type of moat is most realistic to build within 12–24 months?
             </p>
           </div>
+        </div>
+      </section>
+
+
+      {/* ── SECTION 7 ── */}
+      <section>
+        <h2>7. Try It — Interactive Calculator</h2>
+        <div className="content">
+          <p>
+            Score a business across the five moat dimensions and see how the overall width — Wide, Moderate, or Narrow — emerges from the combination.
+          </p>
+          <CompetitiveMoatsCalc />
         </div>
       </section>
 

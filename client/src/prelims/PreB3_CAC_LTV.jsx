@@ -1,3 +1,5 @@
+import CACLTVCalc from './calculators/CACLTVCalc.jsx'
+
 const PreB3 = () => {
   return (
     <div className="case-study">
@@ -340,6 +342,18 @@ Result: Better economics than the ad channel at 1/4 the spend.`}
               decisions. Businesses that do not track them spend money on intuition.
             </p>
           </div>
+        </div>
+      </section>
+
+
+      {/* ── SECTION 7 ── */}
+      <section>
+        <h2>7. Try It — Interactive Calculator</h2>
+        <div className="content">
+          <p>
+            Set the CAC and monthly serving economics to see whether this customer relationship creates or destroys value over its lifetime.
+          </p>
+          <CACLTVCalc />
         </div>
       </section>
 

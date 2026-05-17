@@ -1,3 +1,5 @@
+import FixedVariableCalc from './calculators/FixedVariableCalc.jsx'
+
 const PreB1 = () => {
   return (
     <div className="case-study">
@@ -365,6 +367,18 @@ Now: Anton considers filling 1 more room at a discounted IDR 1,200,000/month.
               variable. If no, it is fixed.
             </p>
           </div>
+        </div>
+      </section>
+
+
+      {/* ── SECTION 7 ── */}
+      <section>
+        <h2>7. Try It — Interactive Calculator</h2>
+        <div className="content">
+          <p>
+            Shift the volume slider past break-even and watch how quickly profit accelerates — this is operating leverage in action.
+          </p>
+          <FixedVariableCalc />
         </div>
       </section>
 

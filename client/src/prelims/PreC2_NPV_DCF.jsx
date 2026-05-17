@@ -1,3 +1,5 @@
+import NPVDCFCalc from './calculators/NPVDCFCalc.jsx'
+
 const PreC2 = () => {
   return (
     <div className="case-study">
@@ -363,6 +365,18 @@ Discount rate:                            12% per year
               use NPV to rank investments by value creation and payback period to filter by risk.
             </p>
           </div>
+        </div>
+      </section>
+
+
+      {/* ── SECTION 7 ── */}
+      <section>
+        <h2>7. Try It — Interactive Calculator</h2>
+        <div className="content">
+          <p>
+            Model a 5-year cash flow stream and watch how the discount rate and terminal growth rate drive the NPV verdict.
+          </p>
+          <NPVDCFCalc />
         </div>
       </section>
 

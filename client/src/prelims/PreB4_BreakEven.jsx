@@ -1,3 +1,5 @@
+import BreakEvenCalc from './calculators/BreakEvenCalc.jsx'
+
 const PreB4 = () => {
   return (
     <div className="case-study">
@@ -315,6 +317,19 @@ action — above break-even, profit grows faster than revenue because fixed cost
               decisions that increase fixed costs (like hiring staff or signing a longer lease).
             </p>
           </div>
+        </div>
+      </section>
+
+      {/* ── SECTION 7 ── */}
+      <section>
+        <h2>7. Try It — Interactive Calculator</h2>
+        <div className="content">
+          <p>
+            The calculator below is pre-loaded with Bayu's bubble tea numbers. Drag the sliders
+            to see how changing price, variable cost, fixed costs, or volume shifts the break-even
+            point and the profit line in real time.
+          </p>
+          <BreakEvenCalc />
         </div>
       </section>
 

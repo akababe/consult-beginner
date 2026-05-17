@@ -1,3 +1,5 @@
+import RevenueProfitCashCalc from './calculators/RevenueProfitCashCalc.jsx'
+
 const PreA1 = () => {
   return (
     <div className="case-study">
@@ -318,6 +320,17 @@ Net Margin = IDR 3,500,000 ÷ IDR 40,000,000  = 8.75%
               moment a business extends credit or holds significant inventory.
             </p>
           </div>
+        </div>
+      </section>
+
+      {/* ── SECTION 7 ── */}
+      <section>
+        <h2>7. Try It — Interactive Calculator</h2>
+        <div className="content">
+          <p>
+            Adjust the sliders to watch Revenue, Profit, and Cash diverge on the exact same transaction — set to Rina's cash-only warung by default.
+          </p>
+          <RevenueProfitCashCalc />
         </div>
       </section>
 

@@ -1,3 +1,5 @@
+import OperatingLeverageCalc from './calculators/OperatingLeverageCalc.jsx'
+
 const PreD2 = () => {
   return (
     <div className="case-study">
@@ -273,6 +275,18 @@ const PreD2 = () => {
               A business owner can deliberately choose lower operating leverage by keeping more costs variable — using subcontractors instead of permanent staff, renting machines instead of buying them, using shared production facilities instead of owning space. This reduces maximum peak-season profit but also eliminates slow-season losses. For a business with highly seasonal demand, lower leverage (more variable costs) may produce better average annual profit than high leverage with severe slow-season losses. The right leverage level depends on how predictable and stable demand is — the more predictable the volume, the more fixed cost structure makes sense.
             </p>
           </div>
+        </div>
+      </section>
+
+
+      {/* ── SECTION 7 ── */}
+      <section>
+        <h2>7. Try It — Interactive Calculator</h2>
+        <div className="content">
+          <p>
+            Compare a high-fixed and low-fixed cost structure across revenue levels — the crossover point is where operating leverage flips.
+          </p>
+          <OperatingLeverageCalc />
         </div>
       </section>
 

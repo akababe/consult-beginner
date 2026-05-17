@@ -4,3 +4,4 @@
 /client/.claude
 /client/node_modules
 skills-lock.json
+/client/src/prelims/financial_literacy_abcd.html

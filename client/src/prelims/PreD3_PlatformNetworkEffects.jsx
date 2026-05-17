@@ -1,3 +1,5 @@
+import NetworkEffectsCalc from './calculators/NetworkEffectsCalc.jsx'
+
 const PreD3 = () => {
   return (
     <div className="case-study">
@@ -236,6 +238,18 @@ Two-Sided Market Analysis
               When a well-funded competitor enters your market, they will typically try to poach demand (customers) with discounts and vouchers. This is expensive for them and often fails, because customers have low loyalty. The harder asset to take from you is your supply base — your cooks, your vendors, your service providers — especially if those relationships are personal, curated, and carry trust. A platform owner who has invested in supply quality and supply relationships has a moat that cash cannot easily buy. See PreD4 for how to evaluate and strengthen this moat systematically.
             </p>
           </div>
+        </div>
+      </section>
+
+
+      {/* ── SECTION 7 ── */}
+      <section>
+        <h2>7. Try It — Interactive Calculator</h2>
+        <div className="content">
+          <p>
+            Increase the user count and watch network value grow as n² while linear value grows as n — this is the compounding power of network effects.
+          </p>
+          <NetworkEffectsCalc />
         </div>
       </section>
 
